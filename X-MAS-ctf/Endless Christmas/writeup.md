@@ -51,7 +51,7 @@ the main function looked like this
 ![im6](mainfile.png)
 
 
-it's a simple xor function compares the input to some other bytes xored byt **0xD**.
+it's a simple xor function compares the input to some other bytes xored by **0xD**.
 so i dumped the `buf` variable content with the IDA hexView
 
 and wrote a very simple solver:
