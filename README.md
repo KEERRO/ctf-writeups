@@ -62,4 +62,23 @@ print result
 
 it gives this cipher text back : `B1A1A3A5A2C4C4B5B4D3A5E1B4C1`
 
-so we can change A with 1 and B with 2 and so on... and put it in an online decryptor in our case we're working with dcode.fr
+so we can change A with 1 and B with 2 and so on... and put it in an online decryptor in our case we're working with
+[This decoding website](https://www.dcode.fr/chiffre-polybe) (remember to fill the matrix from "`A` to `Z` skipping `J).
+
+
+<br>
+
+![im7](res.png)
+
+<br>
+
+as we can see the plain text is `FACEBOOKISEVIL` passing it to the binary we get a greating message and the flag.
+
+<br>
+
+![im8](flag.png)
+
+
+<br>
+
+FLAG: `1337_FD_DDLLLKMO_KUWRRRVL_HAHAHA`
