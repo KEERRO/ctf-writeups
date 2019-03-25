@@ -9,7 +9,7 @@ Given a not stripped 64 bit binary that requires args annd prints "are you serio
 
 <br>
 
-Opening the binary in gdb and disassembling the main function it look so long (163015 assembly instructions).
+Opening the binary in gdb and disassembling the main function it looks so long (163015 assembly instructions).
 
 <br>
 
@@ -34,7 +34,7 @@ after we execute it, it gives that text.
 
 <br>
 
-and we can see the flag in it.
+in which we can see the flag.
 
 
 FLAG: `securinets{automating_everything_is_the_new_future}`
