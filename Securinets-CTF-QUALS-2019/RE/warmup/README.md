@@ -1,6 +1,7 @@
 # Warmup challenge (RE)
 Given a stripped 64 bit binary.
 executing it, asking for a passcode then somehow it will get checked and a result message appears on the terminal.
+<br>
 ![im1](executing.png)
 After opening the binary in IDA and entering decompilation mode it does some encodings on the binary and it checks the result by doing some calculations on the characters.
 ![im2](checksb64.png)
