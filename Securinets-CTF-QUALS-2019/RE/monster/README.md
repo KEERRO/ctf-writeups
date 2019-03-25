@@ -82,7 +82,7 @@ We can extract that hash using gdb just making a breakpoint in strcmp (don't for
 <br>
 
 so we know the correct hash is `0d64ecdb3defc7d75003884274e9906b`.
-the idea here is to bruteforce the input that gives as that hash so i wrote that simple python script doing the job.
+the idea here is to bruteforce the input that gives that hash so i wrote that simple python script doing the job.
 ```python
 import hashlib
 correct_hash = "0d64ecdb3defc7d75003884274e9906b"
