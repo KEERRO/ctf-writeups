@@ -11,12 +11,19 @@ After opening the binary in IDA and entering decompilation mode it does some enc
 so first of all we have to identify the encoding algorithm.
 We can use 2 methods to do that ltrace or setting breakpoints on a debugger and check the output of the encoding function maybe we can identify it by format.
 ## ltrace:
+
 <br>
+
 ![im3](call_b64encode1.png)
+
 <br>
+
 ## using a debugger (GDB in our case):
+
 <br>
+
 ![im4](call_b64encode.png)
+
 <br>
 So as we can see the algorithm is base64 encoding u can try and input some known input it will encode it to base64.
 
