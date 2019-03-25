@@ -15,3 +15,5 @@ We can use 2 methods to do that ltrace or setting breakpoints on a debugger and 
 So as we can see the algorithm is base64 encoding u can try and input some known input it will encode it to base64.
 
 After identifying the algorithm we'll try to dig more in the binary and follow the calculations done by functions and write a python script just following the instructions one by one contructing the encoded string that goes well with the conditions then decode it getting the flag.
+
+FLAG: `securinets{l3ts_w4rm_1t_up}`
