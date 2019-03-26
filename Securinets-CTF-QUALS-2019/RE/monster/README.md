@@ -51,7 +51,7 @@ then take a pre-initialized string in the .DATA section of the binary which is l
 
 <br>
 
-and calculate its MD5 hash then comparing the 2 hashes if they're equal it jumps to `sub_C0F` which contains a system call to print the flag
+and calculates its MD5 hash then compares the 2 hashes if they're equal it jumps to `sub_C0F` which contains a system call to print the flag
 
 
 <br>
