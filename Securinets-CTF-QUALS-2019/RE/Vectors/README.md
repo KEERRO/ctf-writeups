@@ -4,7 +4,7 @@ Given a 64 bit stripped binary, it asks for passcode checks it somehow then a re
 
 <br>
 
-![im1](execute.png)
+![im1](excute.png)
 
 <br>
 
