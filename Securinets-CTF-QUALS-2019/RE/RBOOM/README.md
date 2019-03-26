@@ -23,7 +23,7 @@ after asking for input it stores it in a file called "lla" after that it makes a
 
 <br>
 
-in that function it verifies that the content of file "la" doesn't acces 256 bytes and then makes a call to `sub_CCF` with our input , "securinets" the content of "la" file and their sizes.
+in that function it verifies that the content of file "la" doesn't acceed 256 bytes and then makes a call to `sub_CCF` with our input , "securinets" the content of "la" file and their sizes.
 
 in that function we can recognize the algorithm by looking at the for loops from 0 tp 255 and we can know that the checked string in `sub_93A` is the key for the encryption cuz RC4's key can't acceed 256 bytes. 
 
