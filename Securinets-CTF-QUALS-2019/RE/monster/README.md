@@ -14,7 +14,7 @@ Opening the binary on IDA there is no main function so we have to figure out whi
 
 it's asking for hex input with the format string "%llx"
 
-but before all of this we notice that check if the pointer on a2 variage which is the argv is longer than 8 the binary just exits. 
+but before all of this we notice that check if the pointer on a2 variable which is the argv is longer than 8 the binary just exits. 
 it's a simple tricky anti-debug technique cuz if the binary is executed outside debugger argv[0]  will contain the environmemnt executing (binary name) only but if we're in a debugger we'll get full path of the binary in that variable which is longer than 8 bytes so it's in a debugger and it will just exit.
 
 
