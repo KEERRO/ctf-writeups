@@ -37,7 +37,7 @@ after that it stored the result of the encryption in "res" file.
 
 now going back to main it's reading the content of "res" and "la" files then xors them with `0x4F` then it compares the results by xoring them and the sum of the operation must be equal to 0 so they are equal.
 
-PS: "la" file contains the ciphertext of the right input.
+PS: "ll" file contains the ciphertext of the right input.
 
 <br>
 
