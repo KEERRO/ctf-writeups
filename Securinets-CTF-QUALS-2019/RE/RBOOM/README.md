@@ -45,7 +45,7 @@ PS: "ll" file contains the ciphertext of the right input.
 
 <br>
 
-So our goal here is to decrypt the content of the file "la" with key "securinets"
+So our goal here is to decrypt the content of the file "ll" with key "securinets"
 
 looking in github found some [C code](https://github.com/kmohamed2020/rc4) to decrypt RC4.
 after we use it to decrypt the cipher we get the flag as a plain text.
