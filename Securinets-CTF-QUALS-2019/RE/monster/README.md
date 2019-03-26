@@ -22,7 +22,7 @@ then we see that `sub_B52` function taking a string and 2 given bytes in the inp
 
 the string: `tsebehtsignisrever`
 
-it xors every byte of the string with the lowbyte of the integer passed as 2nd parameter then it multipies the integer * 1337 and that function `sub_1080` just do modulo operation like if we consder n=0xaabb our input in every iteration it does `n = ((n * 1337) % 133713371337)`.
+it xors every byte of the string with the lowbyte of the integer passed as 2nd parameter then it multipies the integer * 1337 and that function `sub_1080` just do modulo operation like if we consder n=0xaabb our input, in every iteration it does `n = ((n * 1337) % 133713371337)`.
 
 <br>
 
