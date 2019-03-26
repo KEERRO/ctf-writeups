@@ -33,7 +33,7 @@ it xors every byte of the string with the lowbyte of the integer passed as 2nd p
 <br>
 
 
-then it passes the result of the xor operations to the function `sub_77D` which is MD5 function in C we can recognize it with the initializations of the variables with hex values ur just we can make a breakpoint with gdb and see the result of calculations.
+then it passes the result of the xor operations to the function `sub_77D` which is MD5 function in C we can recognize it with the initializations of the variables with hex values or just we can make a breakpoint with gdb and see the result of calculations.
 
 
 <br>
