@@ -75,7 +75,7 @@ we can use gdb to calculate of offset between `execve` and `/bin/sh` string in l
 
 we can see that the offset is `0xcf06a`.
 
-Okay now we need just the gadgets to perform the call that we want execve needs 3 arguments so we have to control `rdi`,`rsi` and `rdx` nad it's not a problem since we have the libc file and the libc base we can calculate locations for every gadget we want.
+Okay now we need just the gadgets to perform the call that we want execve needs 3 arguments so we have to control `rdi`,`rsi` and `rdx` and it's not a problem since we have the libc file and the libc base we can calculate locations for every gadget we want.
 
 last step to go is to get the padding of the stack to control `RIP` or the instructions pointer peda is very good at this using its `pattern` tool with `create` and `offset` options.
 
