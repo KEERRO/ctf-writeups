@@ -59,7 +59,7 @@ Using gdb we can know that the offset of win() function and lose() function in t
 
 The format string `%hhn` will help doing this (the Half of the Half of a WORD) which is one byte.
 
-Now let's start by determining where our buffer os located in the stack.
+Now let's start by determining where our buffer is located in the stack.
 
 ![img7](off.png)
 
