@@ -2,7 +2,7 @@
 
 We are given a 64bit binary, a libc and even the source code .
 Our first assumptions is that it's a BOF (Buffer OverFlow) challenge cuz we can see the `gets` function with no control of the input length.
-And we can see also that it's giving us the adress of `printf` in libc so no leak needed here.
+And we can see also that it's giving us the address of `printf` in libc so no leak needed here.
 
 
 ![img1](executing.png)
@@ -10,9 +10,9 @@ And we can see also that it's giving us the adress of `printf` in libc so no lea
 
 and we also have the libc linked in the server so the attack scenario is simple:
 
-1-get the leaked adress of printf.
+1-get the leaked address of printf.
 
-2-get the offset of printf in libc and calculate the base adress.
+2-get the offset of printf in libc and calculate the base address.
 
 3-collect needed gadgets and build the ROP chain.
 
@@ -33,7 +33,7 @@ we can see that the offset of printf in libc is `0x64e80`.
 
 and the offset of execve in libc is `0xe4e30`.
 
-okay let's start creating our exploit. Pwntools will make our life so much easier. First of all we have to get the leaked adress and calculate the base location.
+okay let's start creating our exploit. Pwntools will make our life so much easier. First of all we have to get the leaked address and calculate the base location.
 
 
 ```python
@@ -50,7 +50,7 @@ print "base: ",hex(base)
 
 ![img4](ex1.png)
 
-if you notice that the base adress of libc always ends with 000 that's because it's the beginning.
+if you notice that the base address of libc always ends with 000 that's because it's the beginning.
 
 now we have to calculate the location of execve by adding the execve offset from libc to the base so the exploit become like:
 
@@ -81,7 +81,7 @@ last step to go is to get the padding of the stack to control `RIP` or the instr
 
 ![img6](patt.png)
 
-We can see that the padding is 40 so our buffer is away 40 bytes from the saved return adress.
+We can see that the padding is 40 so our buffer is away 40 bytes from the saved return address.
 
 Everything is ready now just we need to complete the exploit and run it:
 
