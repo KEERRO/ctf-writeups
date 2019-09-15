@@ -50,7 +50,7 @@ print "base: ",hex(base)
 
 ![img4](ex1.png)
 
-if you notice that the base adress ends with 000 cuz it's the beginning adress always.
+if you notice that the base adress always ends with 000 cuz it's the beginning.
 
 now we have to calculate the location of execve by adding the execve offset from libc to the base so the exploit become like:
 
