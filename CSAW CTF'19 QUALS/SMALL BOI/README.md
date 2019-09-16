@@ -80,15 +80,15 @@ Now let's try performing this by making the program jump to that syscall and fil
   
   -)RAX=59 (the number of the execve syscall)
   
-  -)RDI=address_of_`/bin/sh`_string
+  -)RDI=address of `/bin/sh` string
   
   -)RSI=0 (second argument of execve)
   
   -)RDX=0 (third argument of execve)
   
-  -)RSP=random_logic_adress (with RW permissions) we can use `vmmap` in gdb-peda to get such adress.
+  -)RSP=random logic adress (with RW permissions) we can use `vmmap` in gdb-peda to get such adress.
   
-  -)RIP=syscall_gadget(provided at 35th line in gadgets)
+  -)RIP=syscall gadget(provided at 35th line in gadgets)
    
   Here's the final exploit:
   
