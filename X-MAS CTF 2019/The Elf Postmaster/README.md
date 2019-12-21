@@ -19,3 +19,7 @@ our idea is to transform the format string vulnerability to executing a rop chai
 3rd step is to send "end of letter" string to exit the loop and step toward executing our ROP chain.
 
 ==> flag on STDOUT :D
+
+This is the longest exploit you could will ever have xD
+
+I could optimise it a bit by creating a function that does the same thing to a different addresses passed as arguments but too lazy for now :3
