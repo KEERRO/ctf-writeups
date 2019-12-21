@@ -2,7 +2,7 @@
 
 We are given a 64bit ELF file and a docker file for the environment.
 
-After analyzing the binary we can figure out it's vulnerable to 2 format strig bugs the 1st is a one-shot one and the second is in an infinite loop stops when we send "end of letter" string.
+After analyzing the binary we can figure out it's vulnerable to 2 format string bugs the 1st is a one-shot one and the second is in an infinite loop stops when we send "end of letter" string.
 
 So we have an infinite arbitrary read/write.
 
