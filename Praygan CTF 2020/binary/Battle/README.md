@@ -43,3 +43,5 @@ It calculates the sum of the scores of each team member and if it's equal to 400
 We will use the off by one bug identified before to overwrite the array of the scores and put bytes there which its sum is 400.
 
 then we will jump the the ```win``` function which is vulnerable to a stack based buffer overflow (it's performing a ```gets``` call). Then we will use the ret2libc technique to get a shell.
+
+(exploit attached)
