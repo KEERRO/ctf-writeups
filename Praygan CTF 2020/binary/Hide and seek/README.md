@@ -39,3 +39,5 @@ So the first approach is to brute force the missing byte of that function since 
 The second approach is to use the same technique but this time we will calculate the addresses of ```puts in plt```, ```pop rdi ; ret``` and ```pop rsi ; pop r15 ; ret``` gadgets and the ```got entry``` for a function i used exit in my exploit.
 
 Then we can leak exit's libc address in order to calculate the addresses of system and "/bin/sh" string and make a typical ret2libc exploit.
+
+(exploit attached)
