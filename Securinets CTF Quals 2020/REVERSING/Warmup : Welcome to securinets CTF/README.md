@@ -2,7 +2,7 @@
 
 We were given a 64bit stripped binary that asks for input and print ":(..." if it's wrong.
 
-![img1](exec.img)
+![img1](exec.png)
 
 Let's open the binary in IDA and see the decompilation of the main function
 
