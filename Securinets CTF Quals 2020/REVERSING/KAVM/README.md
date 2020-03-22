@@ -11,7 +11,7 @@ Follow the VM code and write a disassembler in python or other programming langu
 
 2nd:
 
-Use angr to solve the challenge and thank to [Mohamed aziz knani](https://twitter.com/moonflock) (member of from Sousse, with love team ranked 5th during the ctf) who provided the angr solver:
+Use angr to solve the challenge and thank to [Mohamed aziz knani](https://twitter.com/moonflock) (member of ```from Sousse, with love``` team ranked 5th during the ctf) who provided the angr solver:
 
 ```python
 import angr
