@@ -12,7 +12,7 @@ Seeing the libraries provided and by running strings on the binary itself we can
 
 Using that tool we can dump the file "task" and running strings against it too we'll notice some python functions like ```b64decode``` and ```base64encode```. So it's most likely a python compiled file but the header is missing we need just to append "\x03\xf3\x0d\x0a\x6c\xe7\xa3\x5b" in the beginning.
 
-![img3](final.png)
+![img4](final.png)
 
 and then using uncompyle6 we get this code:
 
