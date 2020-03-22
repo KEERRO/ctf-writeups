@@ -2,11 +2,11 @@
 
 We were given a 64bit stripped binary that asks for input and print ":(..." if it's wrong.
 
-[img1](exec.img)
+![img1](exec.img)
 
 Let's open the binary in IDA and see the decompilation of the main function
 
-[img2](main.png)
+![img2](main.png)
 
 So it asks for input then pass that input to memfrob function and last of all it compares the result with a constant string ```byte_201020```.
 
