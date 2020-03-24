@@ -38,7 +38,7 @@ Double click on that sub-routine and press ```tab``` or ```F5``` key to decompil
 
 ![img7](right.png)
 
-As you can see most of the functions are not named because the binary is statically linked and stripped and to understand the correct behaviour we need to identify the functions so we're using the FLIRT technology of IDA it's a technology that rename the functions based on their signatures. But to do that we need to to get a database of signatures. I used [this](https://github.com/push0ebp/sig-database/tree/master/ubuntu/libc6/18.04%20(bionic)/amd64) github repository i found in google.
+As you can see most of the functions are not named because the binary is statically linked and stripped and to understand the correct behaviour we need to identify the functions so we're using the FLIRT technology of IDA it's a technology that rename the functions based on their signatures. But to do that we need to get a database of signatures. I used [this](https://github.com/push0ebp/sig-database/tree/master/ubuntu/libc6/18.04%20(bionic)/amd64) github repository i found on google.
 
 To install the database files just clone the repository in ```sig``` directory in the root directory of your installed IDA. And move the files in ```sig-database/ubuntu/libc6/18.04 (bionic)/amd64``` directory of the cloned repository in ```sig/pc``` in the root path of your installed IDA. Then restart IDA.
 
