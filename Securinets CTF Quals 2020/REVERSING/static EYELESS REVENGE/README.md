@@ -38,7 +38,7 @@ Double click on that sub-routine and press ```tab``` or ```F5``` key to decompil
 
 ![img7](right.png)
 
-As you can see most of the functions are not named because the binary is statically linked and stripped and to understand the correct behaviour behaviour we need to identify the functions so we're using the FLIRT technology of IDA it's a technology that rename the functions based on their signatures. But to do that we need to to get a database of signatures. I used [this](https://github.com/push0ebp/sig-database/tree/master/ubuntu/libc6/18.04%20(bionic)/amd64) github repository i found in google.
+As you can see most of the functions are not named because the binary is statically linked and stripped and to understand the correct behaviour we need to identify the functions so we're using the FLIRT technology of IDA it's a technology that rename the functions based on their signatures. But to do that we need to to get a database of signatures. I used [this](https://github.com/push0ebp/sig-database/tree/master/ubuntu/libc6/18.04%20(bionic)/amd64) github repository i found in google.
 
 To install the database files just clone the repository in ```sig``` directory in the root directory of your installed IDA. And move the files in ```sig-database/ubuntu/libc6/18.04 (bionic)/amd64``` directory of the cloned repository in ```sig/pc``` in the root path of your installed IDA. Then restart IDA.
 
@@ -62,7 +62,7 @@ And here we go!
 
 5) it xor's the string ```input+0xb``` with the generated random BYTE array.
 
-6) compares the result with a another BYTE array (initialized in the beginning of the function)
+6) it compares the result with a another BYTE array (initialized in the beginning of the function)
 
 So all we need to do is to generate the same sequence of bytes and xor back the values. I wrong this C code to generate the bytes.
 
@@ -86,6 +86,7 @@ int main(){
 ```
 
 It will give back this sequence ```159,196,119,205,2,207,82,234,151,78,129,2,2,79,229,25,155,95,202,80,249,170,34,185,219,178,9,165,220,250,3,123,190,122,72,193,73,155,171,225,233,44,227,235,124,200,5,23,39,207,103,33,121,137,218,84,59,227,250,24,221,253,147,156,119,220,93,193,119,8,162,96,53,133,75,177,78,80,200,117,32,47,150,153,184,113,238,243,84,232,11,50,229,159,206,92,123,43,29,242```. Then we'll use this python script to reverse the xor operation.
+
 
 ```python
 from pwn import *
