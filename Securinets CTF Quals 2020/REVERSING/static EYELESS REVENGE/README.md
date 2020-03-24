@@ -58,11 +58,11 @@ And here we go!
  
 3) it seeds the random with the tested first letter of the input so it seeds with 115 ( chr('s') ).
  
-4) it generates a random BYTES array.
+4) it generates a random BYTES array (from line 161 to 165).
 
-5) it xor's the string ```input+0xb``` with the generated random BYTE array.
+5) it xor's the string ```input+0xb``` with the generated random BYTE array (from line 166 to 167).
 
-6) it compares the result with a another BYTE array (initialized in the beginning of the function)
+6) it compares the result with a another BYTE array (initialized in the beginning of the function). (from line 168 to 170)
 
 So all we need to do is to generate the same sequence of bytes and xor back the values. I wrong this C code to generate the bytes.
 
