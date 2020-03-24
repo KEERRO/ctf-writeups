@@ -16,13 +16,13 @@ As you can see more then 500 functions. So to find the main function we need to 
 
 ![img3](start.png)
 
-The marked sub-routine is the address of the main function let's decompile it and see what's going in there.
+The marked sub-routine is the address of the main function let's decompile it and see what's going on in there.
 
 ![img4](main.png)
   
 The main is a pretty large function. But long story short when we analyze this function we will figure out that the algorithm is unsolvable ; impossible to break it or to restore the flag from it.
 
-My inteded solution is to use the ```xref``` feature to determine the right function being executed. And that's why i messed up the sections headers to not let the constant just put the binary in a debugger and get the right function address easily.
+My inteded solution is to use the ```xref``` feature to determine the right function being executed. And that's why i messed up the sections headers to not let the contestant just put the binary in a debugger and get the right function address easily.
 
 Okay let's first open ```strings``` tab in IDA (shift+F12).
 
