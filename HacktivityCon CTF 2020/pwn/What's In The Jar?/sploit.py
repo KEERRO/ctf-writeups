@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# 1 leak stack and libc pointers using format string
+# 2 use off by null to perform unlink attack to control chunks' pointers array
+# 3 overwrite free@got with system
+# 4 free chunk with "/bin/sh" as data
+
 from pwn import *
 
 exe = context.binary = ELF('./jar')
