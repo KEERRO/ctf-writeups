@@ -3,7 +3,9 @@
 
 ## overall idea:
 1- Disassembling a multi-layer pickle VM program.
+
 2- Understand the control flow and create an automated parser to parse all the pickled objects to write a solver for the challenge (using Z3py).
+
 
 The source code is just loading a pickled object which is loading another object which is loading several other objects based on the flag checking routine. This means if the first check succeeded it jumps to the 2nd check otherwise it'll just `return 0` and print a fail message.
 
