@@ -12,7 +12,7 @@ The source code is just loading a pickled object which is loading another object
 
 We used `pickletools` to disassemble the objects --> static analysis FTW \o/! These articles [1](https://intoli.com/blog/dangerous-pickles/) [2](https://tjcsc.netlify.app/csc/writeups/angstromctf-2021-pickle) [list of opcodes spec](https://juliahub.com/docs/Pickle/LAUNc/0.1.0/opcode/) helped us understand the VM spec and the behaviour of the different opcodes.
 
-The flag checking routine is just a combinations of conditions between 2 chars of the flag picked "patternless" in every check function. Totally 250 checks done so 250 conditions that's why we used this automated solutions to iterate over all the objects and add constraints to the solver automatically:
+The flag checking routine is just a combinations of conditions between 2 chars of the flag picked "patternless" in every check function. Totally 250 checks done so 250 conditions that's why we used this automated solution to iterate over all the objects and add constraints to the solver automatically:
 
 ```python
 from z3 import *
